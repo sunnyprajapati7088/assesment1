@@ -20,7 +20,7 @@ function App() {
        {
          url: "https://th.bing.com/th/id/OIP.5L3doQJIZR-zDn9vBDkdfwHaFj?rs=1&pid=ImgDetMain",
          ready: true,
-         error: false,
+         error: true ,
        },
      ],
    };

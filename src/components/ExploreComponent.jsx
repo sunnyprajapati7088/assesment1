@@ -18,7 +18,7 @@ const CircleImage = ({ image, index }) => {
         } else {
           setIsRetrying(false);
         }
-      }, 5000);
+      }, 3000);
     } else {
       setIsRetrying(false);
     }
