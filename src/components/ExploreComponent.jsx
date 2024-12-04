@@ -30,14 +30,16 @@ const CircleImage = ({ image, index }) => {
     <div className="circle-container">
       {isRetrying && (
         <div className="retry-overlay">
-          <img src="/public/tenor.gif" className="im" />
+          <img
+            src="https://cdn.pixabay.com/animation/2023/08/11/21/18/21-18-05-265_512.gif"
+            className="im"
+          />
         </div>
       )}
-      <div
-        className="circle-content"
-      >
-        {error ? (  <div className="error-icon">⚠️</div>
- ) : ready ? (
+      <div className="circle-content">
+        {error ? (
+          <div className="error-icon">⚠️</div>
+        ) : ready ? (
           <img
             src={image.url}
             alt={`Image ${index + 1}`}
