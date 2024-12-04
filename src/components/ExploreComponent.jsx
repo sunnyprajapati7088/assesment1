@@ -30,7 +30,7 @@ const CircleImage = ({ image, index }) => {
     <div className="circle-container">
       {isRetrying && (
         <div className="retry-overlay">
-          <img src="/src/assets/tenor.gif" className="im" />
+          <img src="/public/tenor.gif" className="im" />
         </div>
       )}
       <div
