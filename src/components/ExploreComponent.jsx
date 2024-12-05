@@ -18,7 +18,7 @@ const CircleImage = ({ image, index }) => {
         } else {
           setIsRetrying(false);
         }
-      }, 3000);
+      }, 5000);
     } else {
       setIsRetrying(false);
     }
@@ -27,7 +27,7 @@ const CircleImage = ({ image, index }) => {
   }, [error, retryCount]);
 
   return (
-    <div className="circle-container">
+    <div className="circle-container" >
       {isRetrying && (
         <div className="retry-overlay">
           <img
