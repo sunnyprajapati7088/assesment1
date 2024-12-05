@@ -27,7 +27,7 @@ const CircleImage = ({ image, index }) => {
   }, [error, retryCount]);
 
   return (
-    <div className="circle-container">
+    <div className="circle-container"  title={`retrycount:${retryCount}>
       {isRetrying && (
         <div className="retry-overlay">
           <img
