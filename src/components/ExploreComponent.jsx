@@ -36,14 +36,15 @@ const CircleImage = ({ image, index }) => {
           />
         </div>
       )}
-      <div className="circle-content">
+      <div className="circle-content"title={`retrycount:${retryCount}`}>
+       
         {error ? (
           <div className="error-icon">⚠️</div>
         ) : ready ? (
           <img
-            src={image.url}
+            src={image.url} 
             alt={`Image ${index + 1}`}
-            className="circle-image"
+            className="circle-image "
             onError={() => setError(true)}
           />
         ) : (
