@@ -36,7 +36,7 @@ const CircleImage = ({ image, index }) => {
           />
         </div>
       )}
-      <div className="circle-content"title={`retrycount:${retryCount}`}>
+      <div className="circle-content" title={`retrycount:${retryCount}`}>
        
         {error ? (
           <div className="error-icon">⚠️</div>
